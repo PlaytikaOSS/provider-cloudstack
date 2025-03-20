@@ -96,7 +96,7 @@ func TerraformSetupBuilder(version, providerSource, providerVersion string) terr
 		if err := json.Unmarshal(data, &creds); err != nil {
 			return ps, errors.Wrap(err, errUnmarshalCredentials)
 		}
-		
+
 		ps.Configuration = buildProviderConfig(creds)
 		// Set credentials in Terraform provider configuration.
 		/*ps.Configuration = map[string]any{
