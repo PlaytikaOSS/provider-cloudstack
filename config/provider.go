@@ -11,6 +11,7 @@ import (
 	ujconfig "github.com/crossplane/upjet/pkg/config"
 
 	"github.com/playtika/provider-cloudstack/config/instance"
+	"github.com/playtika/provider-cloudstack/config/account"
 )
 
 const (
@@ -37,6 +38,7 @@ func GetProvider() *ujconfig.Provider {
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
 		instance.Configure,
+		account.Configure,
 	} {
 		configure(pc)
 	}
