@@ -1,0 +1,16 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: StaticNAT
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/staticnat
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    ipAddressIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
+    virtualMachineIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

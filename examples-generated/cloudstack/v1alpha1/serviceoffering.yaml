@@ -1,0 +1,12 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: ServiceOffering
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/serviceoffering
+  labels:
+    testing.upbound.io/example-name: example
+  name: example
+spec:
+  forProvider:
+    displayText: Example Service Offering
+    name: example-service-offering

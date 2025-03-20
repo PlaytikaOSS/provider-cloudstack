@@ -1,0 +1,13 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: VPNGateway
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/vpngateway
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    vpcIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

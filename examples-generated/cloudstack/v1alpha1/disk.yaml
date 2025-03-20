@@ -1,0 +1,20 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: Disk
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/disk
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    attach: "true"
+    diskOfferingSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
+    name: test-disk
+    size: 50
+    virtualMachineId: server-1
+    zoneSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

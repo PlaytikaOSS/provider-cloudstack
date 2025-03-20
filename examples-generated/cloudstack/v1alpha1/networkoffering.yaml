@@ -1,0 +1,14 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: NetworkOffering
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/networkoffering
+  labels:
+    testing.upbound.io/example-name: example
+  name: example
+spec:
+  forProvider:
+    displayText: Example Network Offering
+    guestIpType: Shared
+    name: example-network-offering
+    trafficType: Guest

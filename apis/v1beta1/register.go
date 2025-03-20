@@ -13,7 +13,7 @@ import (
 
 // Package type metadata.
 const (
-	Group   = "template.upbound.io"
+	Group   = "cloudstack.playtika.com"
 	Version = "v1beta1"
 )
 

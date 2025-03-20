@@ -1,0 +1,18 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: User
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/user
+  labels:
+    testing.upbound.io/example-name: example
+  name: example
+spec:
+  forProvider:
+    accountSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
+    email: user@example.com
+    firstName: John
+    lastName: Doe
+    password: securepassword
+    username: jdoe

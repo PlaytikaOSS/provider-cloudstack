@@ -1,0 +1,14 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: StaticRoute
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/staticroute
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    cidr: 10.0.0.0/16
+    gatewayIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

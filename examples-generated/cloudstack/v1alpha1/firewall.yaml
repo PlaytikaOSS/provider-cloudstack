@@ -1,0 +1,18 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: Firewall
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/firewall
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    ipAddressId: 30b21801-d4b3-4174-852b-0c0f30bdbbfb
+    rule:
+    - cidrList:
+      - 10.0.0.0/8
+      ports:
+      - "80"
+      - 1000-2000
+      protocol: tcp

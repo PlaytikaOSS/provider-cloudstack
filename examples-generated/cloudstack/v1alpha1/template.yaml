@@ -1,0 +1,18 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: Template
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/template
+  labels:
+    testing.upbound.io/example-name: centos64
+  name: centos64
+spec:
+  forProvider:
+    format: VHD
+    hypervisor: XenServer
+    name: CentOS 6.4 x64
+    osType: CentOS 6.4 (64bit)
+    url: http://someurl.com/template.vhd
+    zoneSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
