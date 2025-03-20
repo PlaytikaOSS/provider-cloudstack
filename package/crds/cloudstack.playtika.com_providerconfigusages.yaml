@@ -4,14 +4,14 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.14.0
-  name: providerconfigusages.template.upbound.io
+  name: providerconfigusages.cloudstack.playtika.com
 spec:
-  group: template.upbound.io
+  group: cloudstack.playtika.com
   names:
     categories:
     - crossplane
     - provider
-    - template
+    - cloudstack
     kind: ProviderConfigUsage
     listKind: ProviderConfigUsageList
     plural: providerconfigusages
