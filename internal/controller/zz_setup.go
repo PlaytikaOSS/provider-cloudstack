@@ -9,6 +9,7 @@ import (
 
 	"github.com/crossplane/upjet/pkg/controller"
 
+	account "github.com/playtika/provider-cloudstack/internal/controller/cloudstack/account"
 	instance "github.com/playtika/provider-cloudstack/internal/controller/cloudstack/instance"
 	providerconfig "github.com/playtika/provider-cloudstack/internal/controller/providerconfig"
 )
@@ -17,6 +18,7 @@ import (
 // the supplied manager.
 func Setup(mgr ctrl.Manager, o controller.Options) error {
 	for _, setup := range []func(ctrl.Manager, controller.Options) error{
+		account.Setup,
 		instance.Setup,
 		providerconfig.Setup,
 	} {
