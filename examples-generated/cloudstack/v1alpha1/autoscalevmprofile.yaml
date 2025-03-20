@@ -1,0 +1,25 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: AutoscaleVmProfile
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/autoscalevmprofile
+  labels:
+    testing.upbound.io/example-name: profile1
+  name: profile1
+spec:
+  forProvider:
+    destroyVmGracePeriod: 45s
+    metadata:
+      mydata: "true"
+    otherDeployParams:
+      displayname: profile1vm
+      networkids: 6eb22f91-7454-4107-89f4-36afcdf33021
+    serviceOfferingSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
+    templateSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
+    zoneSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

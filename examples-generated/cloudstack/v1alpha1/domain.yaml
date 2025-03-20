@@ -1,0 +1,15 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: Domain
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/domain
+  labels:
+    testing.upbound.io/example-name: example
+  name: example
+spec:
+  forProvider:
+    name: example-domain
+    networkDomain: example.local
+    parentDomainIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

@@ -1,0 +1,14 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: NetworkACL
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/networkacl
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    name: test-acl
+    vpcIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

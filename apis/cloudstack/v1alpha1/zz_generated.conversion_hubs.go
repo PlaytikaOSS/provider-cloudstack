@@ -10,4 +10,97 @@ package v1alpha1
 func (tr *Account) Hub() {}
 
 // Hub marks this type as a conversion hub.
+func (tr *AffinityGroup) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *AutoscaleVmProfile) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *Disk) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *DiskOffering) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *Domain) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *EgressFirewall) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *Firewall) Hub() {}
+
+// Hub marks this type as a conversion hub.
 func (tr *Instance) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *IPAddress) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *LoadBalancerRule) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *Network) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *NetworkACL) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *NetworkACLRule) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *NetworkOffering) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *NIC) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *PortForward) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *PrivateGateway) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *SecondaryIPAddress) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *SecurityGroup) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *SecurityGroupRule) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *ServiceOffering) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *SSHKeypair) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *StaticNAT) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *StaticRoute) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *Template) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *User) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *Volume) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *VPC) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *VPNConnection) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *VPNCustomerGateway) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *VPNGateway) Hub() {}
+
+// Hub marks this type as a conversion hub.
+func (tr *Zone) Hub() {}

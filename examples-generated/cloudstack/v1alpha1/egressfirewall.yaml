@@ -1,0 +1,20 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: EgressFirewall
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/egressfirewall
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    networkIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
+    rule:
+    - cidrList:
+      - 10.0.0.0/8
+      ports:
+      - "80"
+      - 1000-2000
+      protocol: tcp

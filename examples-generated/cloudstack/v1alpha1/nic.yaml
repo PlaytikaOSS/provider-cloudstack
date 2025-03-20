@@ -1,0 +1,17 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: NIC
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/nic
+  labels:
+    testing.upbound.io/example-name: test
+  name: test
+spec:
+  forProvider:
+    ipAddress: 192.168.1.1
+    networkIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example
+    virtualMachineIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

@@ -1,0 +1,31 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: SecurityGroupRule
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/securitygrouprule
+  labels:
+    testing.upbound.io/example-name: web
+  name: web
+spec:
+  forProvider:
+    rule:
+    - cidrList:
+      - 0.0.0.0/0
+      ports:
+      - "80"
+      - "443"
+      protocol: tcp
+    - cidrList:
+      - 192.168.0.0/24
+      - 192.168.1.0/25
+      ports:
+      - 80-90
+      - "443"
+      protocol: tcp
+      trafficType: egress
+      userSecurityGroupList:
+      - group01
+      - group02
+    securityGroupIdSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example

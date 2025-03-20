@@ -1,0 +1,12 @@
+apiVersion: cloudstack.playtika.com/v1alpha1
+kind: SecurityGroup
+metadata:
+  annotations:
+    meta.upbound.io/example-id: cloudstack/v1alpha1/securitygroup
+  labels:
+    testing.upbound.io/example-name: default
+  name: default
+spec:
+  forProvider:
+    description: Allow access to HTTP and HTTPS
+    name: allow_web
